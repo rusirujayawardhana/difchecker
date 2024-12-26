@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Difference Checker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Text Difference Checker</h1>
+    <div class="text-area-wrapper">
+      <div class="text-area">
+        <label for="original-text">Original Text</label>
+        <div contenteditable="true" id="original-text" class="editable-text"></div>
+      </div>
+      <div class="text-area">
+        <label for="changed-text">Changed Text</label>
+        <div contenteditable="true" id="changed-text" class="editable-text"></div>
+      </div>
+    </div>
+    <button id="compare-button">Compare</button>
+  </div>
+  <script src="diff_match_patch.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
